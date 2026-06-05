@@ -1,0 +1,53 @@
+{
+  "name": "data-table-list",
+  "version": "1.0.2",
+  "private": false,
+  "type": "module",
+  "main": "./dist/data-table-list.umd.cjs",
+  "module": "./dist/data-table-list.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/data-table-list.js",
+      "require": "./dist/data-table-list.umd.cjs"
+    },
+    "./dist/data-table-list.css": "./dist/data-table-list.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "bootstrap-italia": "^2.18.1",
+    "vue": "^3.5.32",
+    "vue-router": "^4.6.4"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.32"
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.58.7",
+    "@tsconfig/node24": "^24.0.4",
+    "@types/node": "^24.12.2",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/tsconfig": "^0.9.1",
+    "npm-run-all2": "^8.0.4",
+    "typescript": "~6.0.0",
+    "vite": "^8.0.8",
+    "vite-plugin-dts": "^5.0.2",
+    "vite-plugin-vue-devtools": "^8.1.1",
+    "vue-tsc": "^3.2.6"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "license": "MIT"
+}
