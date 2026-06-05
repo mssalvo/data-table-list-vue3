@@ -2,8 +2,9 @@
 
 ![Vue](https://img.shields.io/badge/Vue-3.x-42b883?logo=vue.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-✔-3178c6?logo=typescript)
- 
- flessibile e completamente personalizzabile per la gestione di tabelle dati.
+![Version](https://img.shields.io/badge/version-1.0.3-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+
+✨ Flessibile e completamente personalizzabile per la gestione di tabelle dati.
 
 ---
  
@@ -40,6 +41,20 @@
 ```sh
 npm install data-table-list@latest
 ```
+
+---
+
+## 🎬 Demo
+
+![Preview](./src/docs/datalist1.png)
+
+---
+
+![Preview](./src/docs/datalist2.png)
+
+---
+
+![Preview](./src/docs/datalist3.png)
 
 ---
 
