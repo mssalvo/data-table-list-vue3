@@ -5,7 +5,8 @@
 ---
 
 
-[![npm downloads](https://shields.io)](https://npmjs.com)     [![npm version](https://shields.io)](https://npmjs.com)
+[![npm downloads](https://shields.io)](https://www.npmjs.com/package/data-table-list?activeTab=readme)  
+[![npm version](https://shields.io)](https://www.npmjs.com/package/data-table-list?activeTab=readme)
 
 ---
 
