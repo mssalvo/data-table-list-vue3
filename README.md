@@ -2,6 +2,7 @@
 
 ![Vue](https://img.shields.io/badge/Vue-3.x-42b883?logo=vue.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-✔-3178c6?logo=typescript)
+ 
  flessibile e completamente personalizzabile per la gestione di tabelle dati.
 
 ---
