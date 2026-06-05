@@ -1,3 +1,27 @@
+# 📊 DataTableList
+
+![Vue](https://img.shields.io/badge/Vue-3.x-42b883?logo=vue.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-✔-3178c6?logo=typescript)
+ flessibile e completamente personalizzabile per la gestione di tabelle dati.
+
+---
+ 
+
+## 🚀 Features
+
+- 🔍 **Filtro globale**
+- 📄 **Paginazione** client & server
+- ⬆️⬇️ **Ordinamento colonne**
+- ✅ **Selezione multipla righe**
+- ⚙️ **Azioni CRUD (View / Update / Delete)**
+- 📥 **Download dati filtrati**
+- 🎨 **Altamente customizzabile tramite slot**
+- 🔄 **Supporto modalità server-side**
+
+---
+ 
+
+
 # Guida all'Utilizzo e all'Implementazione di `DataTableList`
 
 `DataTableList` è un componente riutilizzabile sviluppato in **Vue 3** (con TypeScript e Composition API). Offre una tabella dati flessibile con supporto nativo per paginazione, ordinamento, filtraggio, azioni di riga, esportazione dati, e selezione multipla tramite checkbox.
@@ -5,12 +29,12 @@
 ---
 
 
-[![npm downloads](https://shields.io)](https://www.npmjs.com/package/data-table-list?activeTab=readme)  
-[![npm version](https://shields.io)](https://www.npmjs.com/package/data-table-list?activeTab=readme)
+[![📥]](https://www.npmjs.com/package/data-table-list?activeTab=readme)  
+[![npm version]](https://www.npmjs.com/package/data-table-list?activeTab=readme)
 
 ---
 
-## Project Setup
+## 📦 Setup
 
 ```sh
 npm install data-table-list@latest
