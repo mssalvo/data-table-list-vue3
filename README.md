@@ -611,3 +611,17 @@ const handleDownload = (filteredData: any[]) => {
 
 1.  **Identificativi Checkbox (`checkId`)**: Quando viene attivata la funzionalità checkbox (`showCheckbox = true`), il componente genera temporaneamente la chiave `checkId` all'interno dei record dell'array `dataItems` per identificare univocamente le righe selezionate. L'array restituito dall'evento `@onchecked` conterrà questi campi aggiuntivi.
 2.  **Reset dell'Ordinamento al cambio pagina**: Ad ogni navigazione di pagina (avanti o indietro) o reset del filtro di ricerca, viene richiamata la funzione `resetClassOrder()` che rimuove la classe CSS `.icon-primaryOrder` dall'header della colonna ordinata, indicando che la nuova pagina mostra i dati nel loro stato originario.
+
+---
+   
+## 🧑‍💻 Autore
+
+**MSalvo**  
+🔗 https://github.com/mssalvo  
+
+---
+
+## 📄 Licenza
+
+Distribuito sotto licenza MIT.  
+Vedi file LICENSE per dettagli.
