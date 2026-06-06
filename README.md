@@ -59,6 +59,20 @@ npm install data-table-list@latest
 
 ---
 
+
+## ☕ Offrimi un caffè
+
+Se questo progetto ti è utile nel tuo lavoro, considera di supportarlo con un caffè ☕  
+
+👉 [[https://paypal.me/msalvonet](https://paypal.me/msalvonet)]
+
+Ogni supporto aiuta a mantenere e migliorare il progetto 🚀
+``
+
+
+
+---
+
 ## usage
 
 
