@@ -153,6 +153,13 @@ export interface ServerPaging {
 *   **`#actions`**: Sostituisce i pulsanti di default (Visualizza, Modifica, Elimina) con pulsanti personalizzati o menu dropdown. Riceve `{ row }`.
 *   **`#checkbox`**: Sostituisce il checkbox di default delle righe. Riceve `{ row }`.
 *   **`#download`**: Personalizza l'aspetto del pulsante di download. Riceve l'evento `{ ondownload: { oncall: Function } }`.
+*   **`#iconView`**: Consente di sostituire l'icona menu view.
+*   **`#iconUpdate`**: Consente di sostituire l'icona menu update.
+*   **`#iconDelete`**: Consente di sostituire l'icona menu delete.
+*   **`#iconAvantiBottom`**: Consente di sostituire l'icona navigatore avanti con posizione bottom.
+*   **`#iconIndietroBottom`**: Consente di sostituire l'icona navigatore indietro con posizione bottom.
+*   **`#iconAvantiTop`**: Consente di sostituire l'icona navigatore avanti con posizione top.
+*   **`#iconIndietroTop`**: Consente di sostituire l'icona navigatore indietro con posizione top.
 
 ---
 
