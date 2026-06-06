@@ -64,7 +64,10 @@ npm install data-table-list@latest
 
 Se questo progetto ti è utile nel tuo lavoro, considera di supportarlo con un caffè ☕  
 
-👉 [[https://paypal.me/msalvonet](https://paypal.me/msalvonet)]
+👉 [[paypal.me/msalvonet](https://paypal.me/msalvonet)]
+
+👉 [[buymeacoffee.com/mssalvo](https://buymeacoffee.com/mssalvo)]
+
 
 Ogni supporto aiuta a mantenere e migliorare il progetto 🚀
 ``
