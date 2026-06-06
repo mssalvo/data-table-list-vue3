@@ -46,15 +46,16 @@ npm install data-table-list@latest
 
 ## 🎬 Demo
 
-![Preview](./src/docs/datalist1.png)
+![Preview](https://raw.githubusercontent.com/mssalvo/data-table-list-vue3/refs/heads/main/src/docs/datalist1.png)
 
 ---
 
-![Preview](./src/docs/datalist2.png)
+![Preview](https://raw.githubusercontent.com/mssalvo/data-table-list-vue3/refs/heads/main/src/docs/datalist2.png)
 
 ---
 
-![Preview](./src/docs/datalist3.png)
+![Preview](https://raw.githubusercontent.com/mssalvo/data-table-list-vue3/refs/heads/main/src/docs/datalist3.png)
+
 
 ---
 
