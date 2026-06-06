@@ -23,6 +23,42 @@ const routes = [
     path: '/esempio-menu',
     name: 'esempiomenu',
     component: EsempioMenuView
+  },
+  {
+    path: '/es1',
+    name: 'esempio1',
+    component: ()=> import('../view/ScenarioAView.vue')
+  },
+  {
+    path: '/es2',
+    name: 'esempio2',
+    component: ()=> import('../view/ScenarioBView.vue')
+  
+  },
+  {
+    path: '/es3',
+    name: 'esempio3',
+    component: ()=> import('../view/ScenarioCView.vue')
+  },
+  {
+    path: '/es4',
+    name: 'esempio4',
+    component: ()=> import('../view/ScenarioDView.vue')
+  },
+  {
+    path: '/es5',
+    name: 'esempio5',
+    component: ()=> import('../view/ScenarioEView.vue')
+  },
+  {
+    path: '/es6',
+    name: 'esempio6',
+    component: ()=> import('../view/ScenarioFView.vue')
+  },
+  {
+    path: '/es7',
+    name: 'esempio7',
+    component: ()=> import('../view/ScenarioGView.vue')
   }
 ]
 

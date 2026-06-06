@@ -3,6 +3,7 @@ import DataTableList from '@/component/commons/DataTableList.vue';
 import type { DataTableConf } from '@/model/Models';
 import { ref } from 'vue';
 
+
 const dataTablConf = ref<DataTableConf>({
     columns: [
         { title: 'ID', property: 'id', order: true },
@@ -49,29 +50,62 @@ const onview=(item:any)=>{
 
 <template>
   <div class="mb-4">
-        <h2>DataTableList Vue3</h2>
-        <span style="font-weight: bold;" class="text-secondary">Inserire un menu personalizzato grazie agli slot personalizzati in modo semplice!</span>
-         <code class="d-block mt-2">&lt;template #actions="item" &gt;</code>
-         <code class="d-block mt-2">
-  &lt;div  class="dropdown dropstart text-center"&gt;<br>
-  &lt;a class="btn btn-dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuDropleft" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;<br>
-    &lt;svg class="icon-expand icon icon-sm icon-secondary">&lt;use href="@/assets/svg/sprites.svg#it-more-items"&gt;&lt;/use>&lt;/svg&gt;<br>
-  &lt;/a&gt;<br>
-  &lt;div class="dropdown-menu" aria-labelledby="dropdownMenuDropleft"&gt;<br>
-    &lt;div class="link-list-wrapper"&gt;<br>
-      &lt;ul class="link-list"&gt;<br>
-        &lt;li style="cursor: pointer;">&lt;a class="dropdown-item list-item"<b> @click.prevent="onview(item.row)"</b>&gt;<br>
-         &lt;span&gt;&lt;svg class="icon  icon-primary icon.primary.hover" aria-hidden="true"&gt;&lt;use href="@/assets/svg/sprites.svg#it-password-visible"&gt;&lt;/use&gt;&lt;/svg&gt; &#123;&#123; 'Dettaglio' &#125;&#125; &lt;/span&gt;<br>
-        &lt;/a&gt;&lt;/li&gt;<br>
-        altro link etc. etc....<br>
-        altro link etc. etc....<br>
-      &lt;/ul&gt;<br>
-    &lt;/div&gt;<br>
-  &lt;/div&gt;<br>
-&lt;/div&gt;<br>
-    &lt;/template&gt;
-         </code>
-        
+      
+<h3>DataTableList Vue3</h3>
+<h4>Inserire un menu personalizzato grazie agli slot personalizzati in modo semplice!</h4>
+
+<pre><code class="language-html">
+&lt;template #actions="item"&gt;
+
+  &lt;div class="dropdown dropstart text-center"&gt;
+
+    &lt;a 
+      class="btn btn-dropdown dropdown-toggle" 
+      href="#" 
+      role="button" 
+      id="dropdownMenuDropleft" 
+      data-bs-toggle="dropdown" 
+      aria-haspopup="true" 
+      aria-expanded="false"
+    &gt;
+      &lt;svg class="icon-expand icon icon-sm icon-secondary"&gt;
+        &lt;use href="@/assets/svg/sprites.svg#it-more-items"&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/a&gt;
+
+    &lt;div class="dropdown-menu" aria-labelledby="dropdownMenuDropleft"&gt;
+
+      &lt;div class="link-list-wrapper"&gt;
+        &lt;ul class="link-list"&gt;
+
+          &lt;li style="cursor: pointer;"&gt;
+            &lt;a 
+              class="dropdown-item list-item" 
+              @click.prevent="onview(item.row)"
+            &gt;
+              &lt;span&gt;
+                &lt;svg class="icon icon-primary"&gt;
+                  &lt;use href="@/assets/svg/sprites.svg#it-password-visible"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                { { 'Dettaglio' } }
+              &lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+
+          &lt;!-- altri link personalizzati --&gt;
+          &lt;li&gt;altro link ecc...&lt;/li&gt;
+          &lt;li&gt;altro link ecc...&lt;/li&gt;
+
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+&lt;/template&gt;
+</code></pre>
+ 
     </div>
 
     <DataTableList :data-items="dataItems" :data-table-conf="dataTablConf"  @onchecked="onChecked" :show-checkbox="true">

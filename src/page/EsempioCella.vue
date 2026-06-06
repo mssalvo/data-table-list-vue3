@@ -64,26 +64,49 @@ const onview = (item: any) => {
 
 <template>
        <div class="mb-4">
-        <h2>DataTableList Vue3</h2>
-        <span style="font-weight: bold;" class="text-secondary">Possibilita di manipolare ogni singola cella utilizzando slot personalizzati in modo semplice!</span>
-         <code class="d-block mt-2">&lt;template #columnTd="item" &gt;</code>
-         <code class="d-block mt-2">
-        &lt;div v-if="item.column.property=='name'"&gt;&#123;&#123; item.row.name &#125;&#125; &lt;br&gt; 
-        &lt;small class="text-secondary">&#123;&#123; item.row.email &#125;&#125;&gt;/small&gt;
-      &lt;/div&gt;<br>
-      &lt;div style="display: flex;align-items: center;width: 100%;" v-if="item.column.property=='id'"&gt;<br>
-      &lt;div style="width: 20%; height: 40px;margin-right: 10px;"&gt;<br>
-      &lt;Avatar  :label="item.row.name.charAt(0).toUpperCase() + item.row.email.charAt(1).toUpperCase()"
-        :background-dynamics="true" class="me-2">&lt;/Avatar&gt;<br>
-      &lt;/div><br>
-       
-      &lt;div style="width: 80%; height: 100%;background-color: brown;text-align: center" v-if="item.column.property=='id'" &gt;
-        &lt;span style="color: #fff!important;text-decoration: underline;text-align: center;width: 100%;" class="text-secondary"&gt;&#123;&#123; item.row.id&#125;&#125;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;<br>
-    &lt;/template&gt;
-         </code>
-        
+    
+<h3>DataTableList Vue3</h3>
+<h4>Possibilità di manipolare ogni singola cella utilizzando slot personalizzati in modo semplice!</h4>
+
+<pre><code class="language-html">
+&lt;template #columnTd="item"&gt;
+
+  &lt;div v-if="item.column.property == 'name'"&gt;
+    { { item.row.name } } &lt;br&gt;
+    &lt;small class="text-secondary"&gt;
+      { { item.row.email } }
+    &lt;/small&gt;
+  &lt;/div&gt;
+
+  &lt;div 
+    style="display: flex; align-items: center; width: 100%;" 
+    v-if="item.column.property == 'id'"
+  &gt;
+
+    &lt;div style="width: 20%; height: 40px; margin-right: 10px;"&gt;
+      &lt;Avatar
+        :label="item.row.name.charAt(0).toUpperCase() + item.row.email.charAt(1).toUpperCase()"
+        :background-dynamics="true"
+        class="me-2"
+      &gt;&lt;/Avatar&gt;
+    &lt;/div&gt;
+
+    &lt;div 
+      style="width: 80%; height: 100%; background-color: brown; text-align: center"
+    &gt;
+      &lt;span 
+        style="color: #fff !important; text-decoration: underline; text-align: center; width: 100%;"
+        class="text-secondary"
+      &gt;
+        { { item.row.id } }
+      &lt;/span&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+&lt;/template&gt;
+</code></pre>
+
     </div>
 
   <DataTableList :data-items="dataItems" :data-table-conf="dataTablConf" @onchecked="onChecked" :show-checkbox="true">

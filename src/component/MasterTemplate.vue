@@ -7,6 +7,13 @@
           <li><router-link to="/data-table-list">DataTableList</router-link></li>
           <li><router-link to="/esempio-cella">Manipola cella </router-link></li>
           <li><router-link to="/esempio-menu">Menu personalizzato</router-link></li>
+          <li><router-link to="/es1">es1</router-link></li>
+          <li><router-link to="/es2">es2</router-link></li>
+          <li><router-link to="/es3">es3</router-link></li>
+          <li><router-link to="/es4">es4</router-link></li>
+          <li><router-link to="/es5">es5</router-link></li>
+          <li><router-link to="/es6">es6</router-link></li>
+          <li><router-link to="/es7">es7</router-link></li>
         </ul>
       </nav>
     </header>
