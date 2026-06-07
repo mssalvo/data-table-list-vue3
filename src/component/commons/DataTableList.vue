@@ -292,23 +292,23 @@ const clearChecked=()=>{
 <div v-if="props.dataTableConf.paginator && props.dataTableConf.paginatorPosition?.top===true" :class="props.dataTableConf.paginatorPosition.class+' col-md-12 mb-3'" >
   
   <button class="btn btn-outline-default navBtn" type="button" @click="indietro">
-  <slolt name="iconIndietroTop">
+  <slot name="iconIndietroTop">
     <span> 
 <svg class="iconNav" viewBox="0 0 24 24">
   <path d="M15 18l-6-6 6-6"/>
 </svg>
 </span>
-    </slolt>
+    </slot>
   </button> 
   <button class="btn btn-default navBtn" type="button">{{ currentPageComputed.value+1 }} / {{ totalPageComputed }}</button>
   <button class="btn btn-outline-default navBtn " type="button" @click="avanti">
-  <slolt name="iconAvantiTop">
+  <slot name="iconAvantiTop">
     <span>
     <svg class="iconNav" viewBox="0 0 24 24">
     <path d="M9 6l6 6-6 6"/>
     </svg>
 </span>
-    </slolt>
+    </slot>
   </button>
  
 </div>
@@ -414,23 +414,23 @@ const clearChecked=()=>{
 <div v-if="props.dataTableConf.paginator && props.dataTableConf.paginatorPosition?.bottom===true" :class="props.dataTableConf.paginatorPosition.class+' col-md-12'">
   
   <button class="btn btn-outline-default navBtn" type="button" @click="indietro">
-  <slolt name="iconIndietroBottom">
+  <slot name="iconIndietroBottom">
     <span>
 <svg class="iconNav" viewBox="0 0 24 24">
   <path d="M15 18l-6-6 6-6"/>
 </svg>
 </span>
-</slolt>
+</slot>
   </button> 
   <button class="btn btn-default navBtn" type="button">{{ currentPageComputed.value+1 }} / {{ totalPageComputed }}</button>
   <button class="btn btn-outline-default navBtn " type="button" @click="avanti">
-  <slolt name="iconAvantiBottom">
+  <slot name="iconAvantiBottom">
     <span>
 <svg class="iconNav" viewBox="0 0 24 24">
   <path d="M9 6l6 6-6 6"/>
 </svg>
 </span>
-</slolt>
+</slot>
   </button>
 
 </div>
