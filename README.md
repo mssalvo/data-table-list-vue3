@@ -7,7 +7,11 @@
 ✨ Flessibile e completamente personalizzabile per la gestione di tabelle dati.
 
 ---
- 
+  ## 🌐 Live Demo
+
+👉 [[vue-universal-pagination-demo](https://data-table-list-demo-ntcine78q-mssalvos-projects.vercel.app)]
+
+---
 
 ## 🚀 Features
 
