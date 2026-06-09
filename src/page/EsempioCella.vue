@@ -33,7 +33,7 @@ const dataTablConf = ref<DataTableConf>({
     delete: true,
   },
   viewActions: true,
-  dimensionePagina: 10
+  dimensionePagina: 4
 });
 
 
@@ -68,46 +68,6 @@ const onview = (item: any) => {
 <h3>DataTableList Vue3</h3>
 <h4>Possibilità di manipolare ogni singola cella utilizzando slot personalizzati in modo semplice!</h4>
 
-<pre><code class="language-html">
-&lt;template #columnTd="item"&gt;
-
-  &lt;div v-if="item.column.property == 'name'"&gt;
-    { { item.row.name } } &lt;br&gt;
-    &lt;small class="text-secondary"&gt;
-      { { item.row.email } }
-    &lt;/small&gt;
-  &lt;/div&gt;
-
-  &lt;div 
-    style="display: flex; align-items: center; width: 100%;" 
-    v-if="item.column.property == 'id'"
-  &gt;
-
-    &lt;div style="width: 20%; height: 40px; margin-right: 10px;"&gt;
-      &lt;Avatar
-        :label="item.row.name.charAt(0).toUpperCase() + item.row.email.charAt(1).toUpperCase()"
-        :background-dynamics="true"
-        class="me-2"
-      &gt;&lt;/Avatar&gt;
-    &lt;/div&gt;
-
-    &lt;div 
-      style="width: 80%; height: 100%; background-color: brown; text-align: center"
-    &gt;
-      &lt;span 
-        style="color: #fff !important; text-decoration: underline; text-align: center; width: 100%;"
-        class="text-secondary"
-      &gt;
-        { { item.row.id } }
-      &lt;/span&gt;
-    &lt;/div&gt;
-
-  &lt;/div&gt;
-
-&lt;/template&gt;
-</code></pre>
-
-    </div>
 
   <DataTableList :data-items="dataItems" :data-table-conf="dataTablConf" @onchecked="onChecked" :show-checkbox="true">
     
@@ -164,6 +124,49 @@ const onview = (item: any) => {
       </div>
     </template>
   </DataTableList>
+
+
+<pre><code class="language-html">
+&lt;template #columnTd="item"&gt;
+
+  &lt;div v-if="item.column.property == 'name'"&gt;
+    { { item.row.name } } &lt;br&gt;
+    &lt;small class="text-secondary"&gt;
+      { { item.row.email } }
+    &lt;/small&gt;
+  &lt;/div&gt;
+
+  &lt;div 
+    style="display: flex; align-items: center; width: 100%;" 
+    v-if="item.column.property == 'id'"
+  &gt;
+
+    &lt;div style="width: 20%; height: 40px; margin-right: 10px;"&gt;
+      &lt;Avatar
+        :label="item.row.name.charAt(0).toUpperCase() + item.row.email.charAt(1).toUpperCase()"
+        :background-dynamics="true"
+        class="me-2"
+      &gt;&lt;/Avatar&gt;
+    &lt;/div&gt;
+
+    &lt;div 
+      style="width: 80%; height: 100%; background-color: brown; text-align: center"
+    &gt;
+      &lt;span 
+        style="color: #fff !important; text-decoration: underline; text-align: center; width: 100%;"
+        class="text-secondary"
+      &gt;
+        { { item.row.id } }
+      &lt;/span&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+&lt;/template&gt;
+</code></pre>
+
+    </div>
+ 
 
 
 </template>

@@ -7,11 +7,13 @@
 ✨ Flessibile e completamente personalizzabile per la gestione di tabelle dati.
 
 ---
+
   ## 🌐 Live Demo
 
 👉 [[vue-universal-pagination-demo](https://data-table-list-demo-ntcine78q-mssalvos-projects.vercel.app)]
 
 ---
+ 
 
 ## 🚀 Features
 
@@ -34,9 +36,8 @@
 
 ---
 
+[![downloads](https://img.shields.io/github/stars/badges/shields)](https://github.com/mssalvo/data-table-list-vue3)     [npm version](https://npmjs.com)
 
-[![📥]](https://www.npmjs.com/package/data-table-list?activeTab=readme)  
-[![npm version]](https://www.npmjs.com/package/data-table-list?activeTab=readme)
 
 ---
 
@@ -95,7 +96,7 @@ import 'data-table-list/dist/data-table-list.css'; // This imports the new stabl
 
 ## 1. Strutture Dati e Interfacce (Modelli)
 
-Il componente utilizza le seguenti interfacce TypeScript definite in [Models.ts](file:///c:/Users/UTENTE/Desktop/progettoIA/data-table-list/src/model/Models.ts):
+Il componente utilizza le seguenti interfacce TypeScript definite in [Models.ts](file://data-table-list/src/model/Models.ts):
 
 ```ts
 export interface DataTableConf {
@@ -114,8 +115,8 @@ export interface DataTableConf {
 export interface ColumnTable {
     title: string;                       // Intestazione della colonna
     property: string;                    // Nome della chiave nell'oggetto riga
-    style?: string | null;               // Stile CSS inline da applicare alla cella (es: "width: 150px")
-    callFormatt?: Function | null;       // Funzione custom per formattare il valore della cella
+    style?: string;               // Stile CSS inline da applicare alla cella (es: "width: 150px")
+    callFormatt?: Function;       // Funzione custom per formattare il valore della cella
     hidden?: boolean;                    // Nasconde la colonna se impostato a true
     order?: boolean;                     // Abilita l'ordinamento client-side per questa colonna
 }
@@ -129,7 +130,7 @@ export interface ActionRow {
 export interface PaginatorPosition {
     top: boolean;                        // Mostra il paginatore sopra la tabella
     bottom: boolean;                     // Mostra il paginatore sotto la tabella
-    class: string | 'center' | 'left' | 'right'; // Allineamento del paginatore ('left', 'center', 'right')
+    class: 'center' | 'left' | 'right'; // Allineamento del paginatore ('left', 'center', 'right')
 }
 
 export interface ServerPaging {

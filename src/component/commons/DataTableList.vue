@@ -95,7 +95,7 @@ const totalPageComputed=computed(()=>{
     if(props.dataItems.length)
     return Math.ceil(( props.dataItems.length / viewItemPage.value))
    }else{
-    return props.dataTableConf.serverPaging?.serverTotalePagine;
+    return (props.dataTableConf.serverPaging?.serverTotalePagine||0);
    }
 })
 
@@ -197,6 +197,7 @@ watch(props.dataItems,async ()=>{
  
 
 const avanti=()=>{
+    if(currentPage.value<((totalPageComputed.value||0)-1))
      currentPage.value=currentPage.value+1 
      if(props.dataTableConf.isserver){ 
          if(props.dataTableConf.serverPaging&& (currentPage.value >= props.dataTableConf.serverPaging.serverTotalePagine)) 

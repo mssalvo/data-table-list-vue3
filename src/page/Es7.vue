@@ -25,8 +25,8 @@ const items = ref([
 
 // Funzione di esportazione CSV client-side al click sul download
 const handleDownload = (filteredData: any[]) => {
-  const csvHeaders = 'ID,Nome\n';
-  const csvRows = filteredData.map(item => `${item.id},"${item.name}"`).join('\n');
+  const csvHeaders = 'ID;Nome\n';
+  const csvRows = filteredData.map(item => `${item.id};"${item.name}"`).join('\n');
   const csvContent = 'data:text/csv;charset=utf-8,' + csvHeaders + csvRows;
   
   const encodedUri = encodeURI(csvContent);

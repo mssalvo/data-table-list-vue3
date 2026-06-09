@@ -17,7 +17,7 @@ const tableConfig = ref<DataTableConf>({
   paginator: true,
   paginatorPosition: { top: false, bottom: true, class: 'center' },
   viewActions: false,
-  dimensionePagina: 10,
+  dimensionePagina: 5,
   serverPaging: {
     serverTotaleElementi: 0, // Inizializzato a 0, popolato in seguito
     serverTotalePagine: 0

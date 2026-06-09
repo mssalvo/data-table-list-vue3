@@ -19,7 +19,7 @@ const dataTablConf = ref<DataTableConf>({
         delete: true,
     },
     viewActions: true,
-    dimensionePagina: 10
+    dimensionePagina: 4
 });
 
 
@@ -53,6 +53,34 @@ const onview=(item:any)=>{
       
 <h3>DataTableList Vue3</h3>
 <h4>Inserire un menu personalizzato grazie agli slot personalizzati in modo semplice!</h4>
+
+<DataTableList :data-items="dataItems" :data-table-conf="dataTablConf"  @onchecked="onChecked" :show-checkbox="true">
+      <template #actions="item">
+  <div  class="dropdown dropstart text-center">
+  <a class="btn btn-dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuDropleft" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <svg class="icon-expand icon icon-sm icon-secondary"><use href="@/assets/svg/sprites.svg#it-more-items"></use></svg>
+     
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuDropleft">
+    <div class="link-list-wrapper">
+      <ul class="link-list">
+        <li style="cursor: pointer;"><a class="dropdown-item list-item" @click.prevent="onview(item.row)">
+         <span><svg class="icon  icon-primary icon.primary.hover" aria-hidden="true"><use href="@/assets/svg/sprites.svg#it-password-visible"></use></svg> {{ 'Dettaglio' }} </span>
+         
+        </a></li>
+        <li   style="cursor: pointer;"><a class="dropdown-item list-item" @click.prevent="onview(item.row)">
+        <span><svg class="icon icon-sm icon-primary icon.primary.hover" aria-hidden="true"><use href="@/assets/svg/sprites.svg#it-user"></use></svg>  {{ 'User' }}</span>
+        </a></li>
+          <li   style="cursor: pointer;"><a class="dropdown-item list-item" @click.prevent="onview(item.row)">
+        <span><svg class="icon icon-sm icon-primary icon.primary.hover" aria-hidden="true"><use href="@/assets/svg/sprites.svg#it-box"></use></svg>  {{'Archivia'}}</span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+      </template>
+    </DataTableList>
+
 
 <pre><code class="language-html">
 &lt;template #actions="item"&gt;
@@ -108,32 +136,7 @@ const onview=(item:any)=>{
  
     </div>
 
-    <DataTableList :data-items="dataItems" :data-table-conf="dataTablConf"  @onchecked="onChecked" :show-checkbox="true">
-      <template #actions="item">
-  <div  class="dropdown dropstart text-center">
-  <a class="btn btn-dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuDropleft" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <svg class="icon-expand icon icon-sm icon-secondary"><use href="@/assets/svg/sprites.svg#it-more-items"></use></svg>
      
-  </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuDropleft">
-    <div class="link-list-wrapper">
-      <ul class="link-list">
-        <li style="cursor: pointer;"><a class="dropdown-item list-item" @click.prevent="onview(item.row)">
-         <span><svg class="icon  icon-primary icon.primary.hover" aria-hidden="true"><use href="@/assets/svg/sprites.svg#it-password-visible"></use></svg> {{ 'Dettaglio' }} </span>
-         
-        </a></li>
-        <li   style="cursor: pointer;"><a class="dropdown-item list-item" @click.prevent="onview(item.row)">
-        <span><svg class="icon icon-sm icon-primary icon.primary.hover" aria-hidden="true"><use href="@/assets/svg/sprites.svg#it-user"></use></svg>  {{ 'User' }}</span>
-        </a></li>
-          <li   style="cursor: pointer;"><a class="dropdown-item list-item" @click.prevent="onview(item.row)">
-        <span><svg class="icon icon-sm icon-primary icon.primary.hover" aria-hidden="true"><use href="@/assets/svg/sprites.svg#it-box"></use></svg>  {{'Archivia'}}</span>
-        </a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-      </template>
-    </DataTableList>
 
 
 </template>

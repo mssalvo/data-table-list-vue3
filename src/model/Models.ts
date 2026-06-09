@@ -1,9 +1,4 @@
 
-
-export interface BreadcrumbConf{
-    label:string;
-    actionRouter:any;
-}
 export interface DataTableConf{
     columns:ColumnTable[];
     actionsRow?:ActionRow;
@@ -28,14 +23,14 @@ export interface ServerPaging{
 export interface PaginatorPosition{
     top:boolean;
     bottom:boolean;
-    class:string | 'center' | 'left' | 'right';
+    class: 'center' | 'left' | 'right';
 }
  
 export interface ColumnTable{
     title:string;
     property:string;
-    style?:string | null;
-    callFormatt?:Function | null;
+    style?:string;
+    callFormatt?:Function;
     hidden?:boolean;
     order?:boolean;
 }

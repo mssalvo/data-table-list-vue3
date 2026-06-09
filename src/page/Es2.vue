@@ -53,7 +53,7 @@ const handleDelete = (item: any) => console.log('Elimina:', item);
   <div class="container my-4">
     <!-- Input di ricerca collegato alla prop :filter -->
     <div class="form-group mb-3">
-      <label for="search">Cerca Utente</label>
+     
       <input id="search" v-model="searchFilter" type="text" class="form-control" placeholder="Cerca...">
     </div>
 

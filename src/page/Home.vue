@@ -18,7 +18,7 @@ const dataTablConf = ref<DataTableConf>({
         delete: false,
     },
     viewActions: true,
-    dimensionePagina: 10
+    dimensionePagina: 3
 });
 
 
@@ -37,7 +37,7 @@ const dataTablConf2 = ref<DataTableConf>({
         delete: false,
     },
     viewActions: true,
-    dimensionePagina: 10
+    dimensionePagina: 3
 });
 
 const dataTablConf3 = ref<DataTableConf>({
@@ -55,7 +55,7 @@ const dataTablConf3 = ref<DataTableConf>({
         delete: true,
     },
     viewActions: true,
-    dimensionePagina: 10
+    dimensionePagina: 3
 });
 
 const dataTablConf4 = ref<DataTableConf>({
@@ -73,7 +73,7 @@ const dataTablConf4 = ref<DataTableConf>({
         delete: true,
     },
     viewActions: true,
-    dimensionePagina: 10
+    dimensionePagina: 3
 });
 
 const dataItems = ref([
@@ -88,7 +88,8 @@ const dataItems = ref([
     { id: 9, name: 'Alice Johnson', email: 'alice.johnson@example.com' },
     { id: 10, name: 'John Doe', email: 'john.doe@example.com' },
     { id: 11, name: 'Jane Smith', email: 'jane.smith@example.com' },
-    { id: 12, name: 'Alice Johnson', email: 'alice.johnson@example.com' }
+    { id: 12, name: 'Alice Johnson', email: 'alice.johnson@example.com' },
+    { id: 13, name: 'Alice Doe', email: 'doe.johnson@example.com' }
 ]);
 
 const onChecked = (checkedItems: any[]) => {
