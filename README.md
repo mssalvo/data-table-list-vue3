@@ -1,6 +1,7 @@
 # 📊 DataTableList
 
 ![Vue](https://img.shields.io/badge/Vue-3.x-42b883?logo=vue.js)
+![npm downloads](https://img.shields.io/npm/dm/data-table-list.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-✔-3178c6?logo=typescript)
 ![Version](https://img.shields.io/badge/version-1.0.3-blue) ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -36,8 +37,11 @@
 
 ---
 
-[![downloads](https://img.shields.io/github/stars/badges/shields)](https://github.com/mssalvo/data-table-list-vue3)     [npm version](https://npmjs.com)
+[![downloads](https://img.shields.io/github/stars/badges/shields)](https://github.com/mssalvo/data-table-list-vue3)   
 
+[npm repo](https://www.npmjs.com/package/data-table-list)  
+ 
+ 
 
 ---
 
